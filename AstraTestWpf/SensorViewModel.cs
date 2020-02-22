@@ -29,8 +29,8 @@ namespace AstraTestWpf
             bool withColor,
             bool withBodyTracking)
         {
-            if (withBodyTracking)
-                CheckThatFreeTrialOfBodyTrackingIsAvailable(settings);
+            //if (withBodyTracking)
+            //    CheckThatFreeTrialOfBodyTrackingIsAvailable(settings);
 
             this.dispatcher = dispatcher;
             this.streamSet = streamSet;

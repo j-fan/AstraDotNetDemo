@@ -14,6 +14,17 @@ This is a simple .Net solution to demonstrate working with [Orbbec Astra (Pro)](
 
 ### How to use:
 
+* Optionally, do this first to update the Orbbec SDK this demo depends on:
+  * Download Orbbec Astra SDK
+  * Optionally, if you have a body tracking license key: 
+    * Open the project in `OrbbecSDK/samples/vs2015`
+    * Update with your license key in main.cpp, in the variable `const char* licenseString = "<INSERT LICENSE KEY HERE>";`
+    * compile the project with the same target platform as your machine (either amd64 or x86 Windows)
+  *  Copy binaries in `OrbbecSDK/samples/vs2015/bin/Release` to `AstraDotNetDemo/Externals/AstraSDK.bin/{your platform}` <b>EXCEPT</b> for AstraDotNet.dll (causes security errors?)
+  * Open and build AstraDotNetDemo.sln
+
+Without doing optional steps above, this fork should be updated with Orbbec SDK 2.0.19 for Windows am64 only. Body Tracking will be avaiable for free until 21 March 2020.
+
 * Open `AstraDotNetDemo.sln` in Visual Studio 2017
 * Build and run `AstraTestWpf` application (F5)
 * All required binaries and libraries are already in repository (see `externals` folder) and are copied automatically to output directory during build
