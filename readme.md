@@ -12,18 +12,19 @@ This is a simple .Net solution to demonstrate working with [Orbbec Astra (Pro)](
 * Any CPU (support for both 32-bit and 64-bit architectures)
 
 
-### How to use:
+### How to update with a newer Orbbec SDK:
 
-* Optionally, do this first to update the Orbbec SDK this demo depends on:
+* Do this first to update the Orbbec SDK this demo depends on:
   * Download Orbbec Astra SDK
   * Optionally, if you have a body tracking license key: 
     * Open the project in `OrbbecSDK/samples/vs2015`
     * Update with your license key in main.cpp, in the variable `const char* licenseString = "<INSERT LICENSE KEY HERE>";`
     * compile the project with the same target platform as your machine (either amd64 or x86 Windows)
+    
+<img src="https://i.imgur.com/0flyP9J.png" width="350"/>
+
   *  Copy binaries in `OrbbecSDK/samples/vs2015/bin/Release` to `AstraDotNetDemo/Externals/AstraSDK.bin/{your platform}` <b>EXCEPT</b> for AstraDotNet.dll (causes security errors?)
   * Open and build AstraDotNetDemo.sln
-
-Without doing optional steps above, this fork should be updated with Orbbec SDK 2.0.19 for Windows am64 only. Body Tracking will be avaiable for free until 21 March 2020.
 
 * Open `AstraDotNetDemo.sln` in Visual Studio 2017
 * Build and run `AstraTestWpf` application (F5)
